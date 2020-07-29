@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+
+x = range(5)
+plt.plot(x,[x1 for x1 in x], label = "linear")
+plt.plot(x,[x1**2 for x1 in x], label = "squared")
+plt.plot(x,[x1**3 for x1 in x], label = "cubic")
+plt.xlim([1.25,3])
+plt.ylim([2,5])
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.title('Learning matplotlib.')
+plt.legend()
+plt.grid(True)
+plt.axis([5,10,15,20])
+plt.show()
+#plt.savefig('plot.png')
